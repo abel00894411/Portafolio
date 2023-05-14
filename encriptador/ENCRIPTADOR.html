@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Codificar</title>
+	<meta name="description" content="Encriptador de palabras"/>
+    <meta name="author" content="Abel"/>
+
+    <style type="text/css">
+    	
+body{
+	text-align: center;
+	color: #6E6E6E;
+	background: #E0F8F1;
+}
+
+h1{
+
+	font-family: monospace;
+
+}
+
+section article{
+	text-align: center;
+	font-family: monospace;
+
+}
+
+ul{
+
+	border: 5px 50%;
+}
+
+textarea {
+			margin: 16px auto;
+		}
+
+		button {
+			margin: 16px auto;
+			padding: 8px 16px;
+			border: solid 2px black;
+			border-radius: 8px;
+			background-color: white;
+			cursor: pointer;
+			transition: background-color 0.5s;
+		}
+
+		button:hover {
+			background-color: lightgray;
+		}
+    </style>
+
+</head>
+<body>
+
+<h1>Encriptador</h1>
+<section>
+	
+	<article>
+		<h3>Descripcion</h3>
+
+		<p>Este es un proyecto insentivado por el programa ONE (Oracle Next Education) en colaboración con Allura</p><br>
+
+		<ul>
+			<li>Ingresa el texto a cifrar/descifrar en el primer recuadro</li>
+			<li>Da click en lo que gustes realizar</li>
+			<li>El texto cifrado/descifrado se encontrará en el segundo recuadro</li>
+
+		</ul>
+
+	</article>
+
+
+</section>
+
+
+<input type="text" style="width: 300px; height:200px; text-align: center;"/>
+
+<br>
+<button name="Codificar">Codificar</button> <br>
+<button name="decodificar">Decodificar</button>
+
+<br>
+<textarea name="resultado" cols="39" rows="15" readonly style="resize: none;" style="text-align: center;">Aqui ira el cifrado/descifrado</textarea>
+<br>
+
+
+
+
+	<script>
+
+		function copiar(){
+
+			texto=input.value;
+
+			resultado.value=texto.toUpperCase();
+
+		}
+
+
+		function Codificar(){
+
+			texto=input.value;
+			var band=false;
+
+			var abecedarioMayus=['A','B','C','D','E','F','G','H','I','J','K','L','M','N','Ñ','O','P','Q','R','S','T','U','V','W','X','Y','Z',';','(',')'];
+
+			for (var i = 0; i < abecedarioMayus.length; i++) {
+				
+				if (!texto.includes(abecedarioMayus[i])) {
+					band=true;
+				}else{
+					band=false;
+					break;
+				}
+			}
+
+		
+
+			if(band){
+
+
+				texto=texto.toUpperCase();
+
+			
+
+
+
+				for(var i=0; i<texto.length; i++){
+
+					texto=texto.replace("A","ai");
+					texto=texto.replace("E","enter");
+					texto=texto.replace("I","imes");
+					texto=texto.replace("O","ober");
+					texto=texto.replace("U","ufat");
+
+				}
+
+				texto=texto.toLowerCase();
+				resultado.value=texto;
+
+			}else{
+				alert("No es posible codificar letras mayusculas ni simbolos, verifique su texto");
+			}
+
+		}
+
+
+
+		function Decodificar(){
+			
+
+			texto=input.value;
+
+
+
+				for(var i=0; i<texto.length; i++){
+
+					texto=texto.replace("ai","a");
+					texto=texto.replace("enter","e");
+					texto=texto.replace("imes","i");
+					texto=texto.replace("ober","o");
+					texto=texto.replace("ufat","u");
+
+				}
+
+				resultado.value=texto;
+
+				
+
+			
+
+		}
+
+
+		
+		var input = document.querySelector("input");
+		input.focus();
+		var codificar=document.querySelector("button[name='Codificar']");
+		var decodificar=document.querySelector("button[name='decodificar']");
+		var resultado=document.querySelector("textarea[name='resultado']");
+		var copiar=document.querySelector("button[name='copiar']");
+
+
+
+		codificar.onclick=Codificar;
+		decodificar.onclick=Decodificar;
+
+
+
+
+	</script>
+
+
+
+<footer>Proyecto Encriptador</footer>
+
+
+
+</body>
+</html>
