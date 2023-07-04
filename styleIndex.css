@@ -1,0 +1,138 @@
+
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+header{
+
+    width: 100%;
+    height: 200px;
+    background: black;
+
+}
+
+
+header img{
+
+    width: 10%;
+    height: 60%;
+    padding: 10px 0;
+    margin-left: 30px;
+}
+
+
+h1{
+    font-weight:bold;
+    font-size: 40px;
+    margin-top: 20px;
+}
+
+main{
+
+    width: 89%; 
+    margin: 0 auto;
+
+}
+
+section{
+    width: 50%;
+    display: inline-block;
+    margin: 50px 0;
+    vertical-align: top;
+}
+
+section h2{
+
+    padding-left: 29%;
+    margin-bottom: 2%;
+    font-weight: bold;
+
+
+}
+
+section img{
+    width: 300px;
+    height: 200px;
+    transition: 0.3s;
+}
+
+section img:hover{
+
+    width: 320px;
+    height: 220px;
+
+}
+
+section p{
+    padding-top: 5px;
+    text-align: center;
+}
+
+
+.habilidadesItemImage{
+
+    width: 200px;
+    display: inline-block;
+    padding-bottom: 10px;
+
+}
+
+
+
+.habilidadesItemImage p{
+    
+    display: inline-block;
+    vertical-align: top;
+    padding-top: 26%;
+    margin-left: 5%;
+}
+
+
+
+footer ul{
+    display: inline-block;
+    width: 260px;
+}
+
+#contenidoFooter{
+    display: inline;
+    color: azure;
+    vertical-align: top;
+}
+
+
+.FooterImages{
+    width: 88.3%;
+    margin: 0 auto;
+    color: aliceblue;
+}
+
+.imageFooter{
+
+    width: 45px;
+    height: 50px;
+    padding-top: 30px;
+    transition: 0.3s;
+}
+
+
+.imageFooter:hover{
+
+    width: 50px;
+    height: 55px;
+}
+
+footer li a{
+
+    color: azure;
+    text-decoration:none;
+}
+
+footer{
+
+    background: black;
+    height: 300px;
+    padding: 50px;
+    margin-top: 11%;
+
+}
