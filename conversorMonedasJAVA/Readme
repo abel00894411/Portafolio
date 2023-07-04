@@ -1,0 +1,20 @@
+El proyecto convertirdor se basa entre las siguientes monedas: 
+
+
+        - Pesos mexicanos
+        - Euros
+        - Libras esterlinas
+        - Yen japones
+        - Won sur coreano
+
+Los valores son estáticos, no son actualizables, los valores de las monedas se tomaron por última vez el 03/07/2023
+y se tomó como base la moneda mexicana.
+
+////// EJEMPLO... 1 dolar = 17.20 pesos mexicanos
+dolar=17.20;
+euro=18.61;	
+libraEsterlina=21.65;
+yenJapones=0.12;
+wonSURCOREANO=0.013;
+
+
